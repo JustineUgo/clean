@@ -11,12 +11,15 @@ class GetComment implements Usecase<List<Comment>, Params> {
   });
 
   @override
-  Future<Either<Failure, List<Comment>>> call(Params params) async {
+  Future<Either<Failure, List<Comment>>> call(params) async {
     return await timelineRepository.getComments(params.postId);
   }
+
 }
 
 class Params {
   final int postId;
-  Params({required this.postId});
+  Params({
+    required this.postId,
+  });
 }

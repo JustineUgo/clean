@@ -52,12 +52,12 @@ class AppBinding extends Bindings {
 
     //* inject repository dependencies [Repo Impl]
     Get.lazyPut<TimelineRepository>(
-      () => Get.find<TimelineRepositoriesImpl>(),
+      () => Get.find<TimelineRepositoryImpl>(),
     );
 
     //* inject repo impl dependencies [Datasources]
-    Get.lazyPut<TimelineRepositoriesImpl>(
-      () => TimelineRepositoriesImpl(
+    Get.lazyPut<TimelineRepositoryImpl>(
+      () => TimelineRepositoryImpl(
         remoteDatasource: Get.find<TimelineRemoteDatasource>(),
       ),
     );

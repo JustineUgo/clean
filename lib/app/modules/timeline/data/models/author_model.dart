@@ -2,7 +2,7 @@ import 'package:clean/app/modules/timeline/domain/entities/author_entity.dart';
 
 class AuthorModel extends Author {
   AuthorModel({
-    required String id,
+    required int id,
     required String name,
     required String email,
     required String gender,

@@ -2,8 +2,8 @@ import 'package:clean/app/modules/timeline/domain/entities/comment_entity.dart';
 
 class CommentModel extends Comment {
   CommentModel({
-    required String id,
-    required String postId,
+    required int id,
+    required int postId,
     required String name,
     required String email,
     required String body,
