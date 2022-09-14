@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:clean/app/core/errors/failures.dart';
 import 'package:clean/app/modules/timeline/domain/entities/author_entity.dart';
 import 'package:clean/app/modules/timeline/domain/repositories/timeline_repository.dart';
