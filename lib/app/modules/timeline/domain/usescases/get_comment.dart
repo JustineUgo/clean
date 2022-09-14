@@ -5,8 +5,6 @@ import 'package:clean/app/modules/timeline/domain/repositories/timeline_reposito
 import 'package:dartz/dartz.dart';
 
 class GetComment implements Usecase<List<Comment>, Params> {
-//implements Usecase<List<Comment>, Params>
-// {
   final TimelineRepository timelineRepository;
   GetComment({
     required this.timelineRepository,

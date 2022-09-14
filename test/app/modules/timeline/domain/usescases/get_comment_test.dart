@@ -1,13 +1,10 @@
 import 'package:clean/app/core/errors/failures.dart';
 import 'package:clean/app/modules/timeline/data/repositories/timeline_repositories_impl.dart';
 import 'package:clean/app/modules/timeline/domain/entities/comment_entity.dart';
-import 'package:clean/app/modules/timeline/domain/repositories/timeline_repository.dart';
 import 'package:clean/app/modules/timeline/domain/usescases/get_comment.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-
-import 'get_post_test.dart';
 
 class MockTimelineRepository extends Mock implements TimelineRepositoryImpl {}
 
