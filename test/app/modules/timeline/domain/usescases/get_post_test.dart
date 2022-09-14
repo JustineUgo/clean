@@ -46,6 +46,7 @@ void main() {
       final result = await getPostUsecase(Params(pageIndex: pageIndex));
       //asset
       verify(() => mockTimelineRepository.getPosts(pageIndex)).called(1);
+      verifyNoMoreInteractions(mockTimelineRepository);
       expect(result, Left(failure));
     });
   });
