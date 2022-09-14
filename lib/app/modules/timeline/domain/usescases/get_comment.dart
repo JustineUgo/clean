@@ -5,18 +5,23 @@ import 'package:clean/app/modules/timeline/domain/repositories/timeline_reposito
 import 'package:dartz/dartz.dart';
 
 class GetComment implements Usecase<List<Comment>, Params> {
+//implements Usecase<List<Comment>, Params>
+// {
   final TimelineRepository timelineRepository;
   GetComment({
     required this.timelineRepository,
   });
 
   @override
-  Future<Either<Failure, List<Comment>>> call(Params params) async {
+  Future<Either<Failure, List<Comment>>> call(params) async {
     return await timelineRepository.getComments(params.postId);
   }
+
 }
 
 class Params {
   final int postId;
-  Params({required this.postId});
+  Params({
+    required this.postId,
+  });
 }

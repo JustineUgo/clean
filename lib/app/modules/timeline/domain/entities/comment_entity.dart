@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 class Comment {
-  final String id;
-  final String postId;
+  final int id;
+  final int postId;
   final String name;
   final String email;
   final String body;

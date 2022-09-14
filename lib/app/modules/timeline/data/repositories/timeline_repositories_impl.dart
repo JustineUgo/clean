@@ -9,9 +9,9 @@ import 'package:clean/app/modules/timeline/domain/entities/comment_entity.dart';
 import 'package:clean/app/modules/timeline/domain/entities/post_entity.dart';
 import 'package:clean/app/modules/timeline/domain/repositories/timeline_repository.dart';
 
-class TimelineRepositoriesImpl implements TimelineRepository {
+class TimelineRepositoryImpl implements TimelineRepository {
   final TimelineRemoteDatasource remoteDatasource;
-  TimelineRepositoriesImpl({
+  TimelineRepositoryImpl({
     required this.remoteDatasource,
   });
 
