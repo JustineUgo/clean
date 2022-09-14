@@ -16,18 +16,24 @@ class AppBinding extends Bindings {
   void dependencies() {
     log('INITITIALING DEPENDENCIES');
 
-    //! inject controllers dependencies [Usecases]
+    /// TDO
+    ///Dependency injection for timeline module
+
+    Get.lazyPut<TodoController>(
+      () => TodoController(),
+    );
+
+    ///TIMELINE
+    ///Dependency injection for timeline module
+
+    //* inject controllers dependencies [Usecases]
     Get.lazyPut<TimelineController>(
       () => TimelineController(
         getPost: Get.find<GetPost>(),
       ),
     );
-    Get.lazyPut<TodoController>(
-      () => TodoController(),
-    );
 
-    //! inject usecases dependencies [Repository]
-    // TimelineRepository timelineRepository = Get.find<TimelineRepository>();
+    //* inject usecases dependencies [Repository]
     Get.lazyPut<GetPost>(
       () => GetPost(
         timelineRepository: Get.find<TimelineRepository>(),
@@ -44,19 +50,19 @@ class AppBinding extends Bindings {
       ),
     );
 
-    //! inject repository dependencies [Repo Impl]
+    //* inject repository dependencies [Repo Impl]
     Get.lazyPut<TimelineRepository>(
       () => Get.find<TimelineRepositoriesImpl>(),
     );
 
-    //! inject repo impl dependencies [Datasources]
+    //* inject repo impl dependencies [Datasources]
     Get.lazyPut<TimelineRepositoriesImpl>(
       () => TimelineRepositoriesImpl(
         remoteDatasource: Get.find<TimelineRemoteDatasource>(),
       ),
     );
 
-    //! inject datasource dependencies [datasource impl]
+    //* inject datasource dependencies [datasource impl]
     Get.lazyPut<TimelineRemoteDatasource>(
       () => TimelineRemoteDatasourceImpl(
         client: Get.find<GetHttpClient>(),

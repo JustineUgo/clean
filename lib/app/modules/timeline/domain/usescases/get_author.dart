@@ -12,7 +12,10 @@ class GetAuthor implements Usecase<Author, Params> {
 
   @override
   Future<Either<Failure, Author>> call(params) async {
-    return await timelineRepository.getAuthor(params.userId);
+    Either<Failure, Author> author =
+        await timelineRepository.getAuthor(params.userId);
+    return author;
+    
   }
 }
 

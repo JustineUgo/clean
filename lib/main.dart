@@ -1,4 +1,4 @@
-import 'package:clean/app/bindings/binding.dart';
+import 'package:clean/app/di/binding.dart';
 import 'package:clean/config/config.dart';
 import 'package:flutter/material.dart';
 

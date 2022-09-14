@@ -1,4 +1,6 @@
+import 'package:clean/app/di/binding.dart';
 import 'package:clean/app/modules/timeline/domain/usescases/get_post.dart';
+import 'package:clean/app/modules/todo/controllers/todo_controller.dart';
 import 'package:get/get.dart';
 
 class TimelineController extends GetxController {
@@ -26,6 +28,10 @@ class TimelineController extends GetxController {
 
   fetchPosts() async {
     final posts = await getPost(Params(pageIndex: _postPageIndex.value));
-    posts.fold((failure) => print(failure.code), (post) => print(post),);
+    posts.fold(
+      (failure) => print(failure.code),
+      (post) => print(post),
+    );
+    Get.deleteAll();
   }
 }
