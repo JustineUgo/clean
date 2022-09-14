@@ -3,7 +3,6 @@ import 'package:clean/app/core/request_header/header.dart';
 import 'package:clean/app/core/utils/constants/constants.dart';
 import 'package:clean/app/core/utils/urls/urls.dart';
 import 'package:clean/app/modules/timeline/data/models/models.dart';
-import 'package:clean/app/modules/timeline/domain/entities/entities.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:get/get.dart';
 
