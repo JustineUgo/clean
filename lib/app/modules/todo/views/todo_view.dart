@@ -13,7 +13,7 @@ class TodoView extends GetView<TodoController> {
         title: const Text('TodoView'),
         centerTitle: true,
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'TodoView is working',
           style: TextStyle(fontSize: 20),

@@ -1,12 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 class Post {
   final int id;
-  final int user_id;
+  final int userId;
   final String title;
   final String body;
   Post({
     required this.id,
-    required this.user_id,
+    required this.userId,
     required this.title,
     required this.body,
   });
@@ -17,7 +17,7 @@ class Post {
   
     return 
       other.id == id &&
-      other.user_id == user_id &&
+      other.userId == userId &&
       other.title == title &&
       other.body == body;
   }
@@ -25,13 +25,13 @@ class Post {
   @override
   int get hashCode {
     return id.hashCode ^
-      user_id.hashCode ^
+      userId.hashCode ^
       title.hashCode ^
       body.hashCode;
   }
 
   @override
   String toString() {
-    return 'Post(id: $id, user_id: $user_id, title: $title, body: $body)';
+    return 'Post(id: $id, userId: $userId, title: $title, body: $body)';
   }
 }

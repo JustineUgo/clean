@@ -5,7 +5,6 @@ import 'package:clean/app/modules/timeline/domain/usescases/get_post.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-// import 'package:mockito/mockito.dart';
 
 class MockTimelineRepository extends Mock implements TimelineRepository {}
 
@@ -20,7 +19,7 @@ void main() {
 
   group('Get Post usecase', () {
     int pageIndex = 1;
-    List<Post> posts = [Post(id: 1, user_id: 1, title: 'title', body: 'body')];
+    List<Post> posts = [Post(id: 1, userId: 1, title: 'title', body: 'body')];
     Failure failure = Failure(code: 400);
 
     test('should get list of posts for a page index', () async {

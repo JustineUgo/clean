@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:get/get.dart';
 
 import 'package:clean/app/modules/timeline/presentation/views/timeline_view.dart';
@@ -11,7 +13,6 @@ abstract class _Paths {
 
 class AppPages {
   AppPages._();
-  // static get Initial => _Paths.TIMELINE;
 
   static const INITIAL = _Paths.TIMELINE;
 

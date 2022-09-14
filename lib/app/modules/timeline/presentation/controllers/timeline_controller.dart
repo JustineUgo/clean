@@ -1,6 +1,6 @@
-import 'package:clean/app/di/binding.dart';
+import 'dart:developer';
+
 import 'package:clean/app/modules/timeline/domain/usescases/get_post.dart';
-import 'package:clean/app/modules/todo/controllers/todo_controller.dart';
 import 'package:get/get.dart';
 
 class TimelineController extends GetxController {
@@ -9,28 +9,15 @@ class TimelineController extends GetxController {
     required this.getPost,
   });
 
-  late Rx<int> _postPageIndex = 0.obs;
+  Rx<int> postPageIndex = 0.obs;
 
-  @override
-  void onInit() {
-    super.onInit();
-  }
 
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
 
   fetchPosts() async {
-    final posts = await getPost(Params(pageIndex: _postPageIndex.value));
+    final posts = await getPost(Params(pageIndex: postPageIndex.value));
     posts.fold(
-      (failure) => print(failure.code),
-      (post) => print(post),
+      (failure) => log(failure.code.toString()),
+      (post) => log(post.toString()),
     );
     Get.deleteAll();
   }
