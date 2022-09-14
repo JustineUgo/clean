@@ -1,3 +1,6 @@
+[![CI Workflow](https://github.com/JustineUgo/clean/actions/workflows/ci.yml/badge.svg)](https://github.com/JustineUgo/clean/actions/workflows/ci.yml)
+<br><br>
+
 # clean
 
 A new Flutter project.
