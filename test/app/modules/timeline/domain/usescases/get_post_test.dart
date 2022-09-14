@@ -5,7 +5,6 @@ import 'package:clean/app/modules/timeline/domain/usescases/get_post.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-// import 'package:mockito/mockito.dart';
 
 class MockTimelineRepository extends Mock implements TimelineRepository {}
 
