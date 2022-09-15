@@ -1,7 +1,6 @@
 import 'package:clean/app/modules/timeline/data/models/author_model.dart';
 import 'package:clean/app/modules/timeline/domain/entities/author_entity.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mocktail/mocktail.dart';
 
 void main() {
   late AuthorModel authorModel;
