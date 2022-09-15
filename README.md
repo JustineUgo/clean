@@ -61,7 +61,7 @@ Separation of concerns is about “order”. The overall goal of separation of c
 
 [Getx](https://pub.dev/packages/get) is an extra-light and powerful solution for Flutter. It combines high-performance <b><em>state management</em></b>, intelligent <b><em>dependency injection</em></b>, and <b><em>route management</em></b> quickly and practically.
 
-Getx could also be used to acheive <em>Internationalization </em>, <em>Changing theme mode</em>, <em>Network calls</em>, <em>Validation</em>, <em>Storage</em> amongst others.
+Getx could also be used to acheive <em>Internationalization </em>, <em>Changing theme mode</em>, <em>Network calls</em>, <em>Validation</em>, <em>Storage</em>, <em>Middleware security</em> amongst others.
 
 ##### The Three pillars of GetX
 
@@ -91,6 +91,8 @@ Controller controller = Get.find()
 Navigation in a small application is not that hard you only need to use the standard navigation that flutter comes packaged with. But when your project grows you’ll want to add authentication, authorizations, dynamic links with all of this you’d probably want less time thinking how navigation is going to work with all of this and spend more time building your business logic. GetX does a good job of helping you do this using middlewares and bindings, child routes.
 
 Whether navigating between screens, showing <em>snackbars</em>, popping <em>dialog boxes</em>, or adding <em>bottom-sheets</em> without 'context', GetX has you covered.
+ 
+With Getx, you can easily add middleware security to your routes.
  
 Instead of routing like this:
 
