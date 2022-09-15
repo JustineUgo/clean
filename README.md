@@ -11,14 +11,14 @@ Clean is an abstract simple mobile application, built with standard procedures. 
 
 This project considers proper techniques for development.
 
-- #### Framework: Flutter
-- #### Software design: Clean Architecture
-- #### Dependency Injection: GetX
-- #### Routing: GetX
-- #### State management: GetX
-- #### Storage: GetStorage
-- #### DevOps (CI/CD): GitHub Actions
-- #### Test: Flutter test
+- ##### Framework: Flutter
+- ##### Software design: Clean Architecture
+- ##### Dependency Injection: GetX
+- ##### Routing: GetX
+- ##### State management: GetX
+- ##### Storage: GetStorage
+- ##### DevOps (CI/CD): GitHub Actions
+- ##### Test: Flutter test
 
 ### Flutter
 
