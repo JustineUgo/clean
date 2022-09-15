@@ -11,14 +11,14 @@ Clean is an abstract simple mobile application, built with standard procedures. 
 
 This project considers proper techniques for development.
 
-- #### Framework: Flutter
-- #### Software design: Clean Architecture
-- #### Dependency Injection: GetX
-- #### Routing: GetX
-- #### State management: GetX
-- #### Storage: GetStorage
-- #### DevOps (CI/CD): GitHub Actions
-- #### Test: Flutter test
+- ##### Framework: Flutter
+- ##### Software design: Clean Architecture
+- ##### Dependency Injection: GetX
+- ##### Routing: GetX
+- ##### State management: GetX
+- ##### Storage: GetStorage
+- ##### DevOps (CI/CD): GitHub Actions
+- ##### Test: Flutter test
 
 ### Flutter
 
@@ -120,6 +120,29 @@ Test automation is the practice of automatically reviewing and validating a soft
 Mocktail, allow emulating a live web service or database and return specific results depending on the situation. 
 
 
+## How to Use 
+
+**Step 1:**
+
+Download or clone this repo by using the link below:
+
+```
+https://github.com/JustineUgo/clean.git
+```
+
+**Step 2:**
+
+Go to project root and execute the following command in console to get the required dependencies: 
+
+```
+flutter pub get 
+```
+
+
 ## Conclusion
 
 Clean is a basic app, that shows how a typical flutter project should consider standard software principles, aiding scalabilty.
+
+I will be happy to answer any questions that you may have on this project. 🙂
+
+If you liked my work, don’t forget to ⭐ star the repo.

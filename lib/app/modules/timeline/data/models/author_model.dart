@@ -1,4 +1,5 @@
-import 'package:clean/app/modules/timeline/domain/entities/author_entity.dart';
+// import 'package:clean/app/modules/timeline/domain/entities/author_entity.dart';
+import 'package:clean/app/modules/timeline/domain/entities/entities.dart';
 
 class AuthorModel extends Author {
   AuthorModel({
@@ -11,11 +12,12 @@ class AuthorModel extends Author {
 
   factory AuthorModel.fromJson(Map<String, dynamic> json) {
     return AuthorModel(
-        id: json['id'],
-        name: json['name'],
-        email: json['email'],
-        gender: json['gender'],
-        status: json['status']);
+      id: json['id'],
+      name: json['name'],
+      email: json['email'],
+      gender: json['gender'],
+      status: json['status'],
+    );
   }
 
   Map<String, dynamic> toJson() {
